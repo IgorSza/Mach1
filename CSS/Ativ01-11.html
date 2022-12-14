@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01 CSS</title>
+</head>
+    <style>
+        button{
+            background-color:#0F0C33;
+            color: #fff;
+            padding: 5px 5px;
+            border: none;
+            width: 100px;
+            height: 50px;
+        }
+        .main_button:hover{
+            cursor: auto;
+            animation-name:rotação;
+            animation-duration: 800ms;
+        }
+        @keyframes rotação{
+            5%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(45deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+
+        }
+
+    </style>
+<body>
+        <div>
+            <button class="main_button">LOGAR</button>
+        </div>
+</body>
+</html>
